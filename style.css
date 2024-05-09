@@ -15,11 +15,12 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 
 body h1 {
     width: 100%;
-    font-size: clamp(4em, 5vw, 6em);
+    font-size: clamp(3em, 5vw, 6em);
     text-align: center;
 }
 
@@ -57,9 +58,11 @@ body button {
 
 #quote {
     font-size: 1.4em;
+    text-align: center;
 }
 
 #author {
+    text-align: center;
     font-size: 0.99em;
     color: #ee2170;
     font-weight: bold;
