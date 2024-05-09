@@ -18,8 +18,14 @@ body {
 }
 
 body h1 {
-    font-size: 4em;
+    width: 100%;
+    font-size: clamp(4em, 5vw, 6em);
     text-align: center;
+}
+
+body h1 span {
+    color: #ee2170;
+    font-size: 1.8em;
 }
 
 body button {
@@ -54,7 +60,9 @@ body button {
 }
 
 #author {
-    font-size: 0.8em;
+    font-size: 0.99em;
+    color: #ee2170;
+    font-weight: bold;
 }
 
 body button {
@@ -62,9 +70,17 @@ body button {
     background-color: #000000;
     color: #ffffff;
     font-size: 1.1em;
+    transition: transform 0.1s ease-in-out
 }
 
 button:hover {
     cursor: pointer;
     filter: brightness(0.8);
+
 }
+
+button:active {
+    transform: scale(0.9);
+}
+
+#author {}
